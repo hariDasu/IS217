@@ -1,4 +1,7 @@
 
+http://web.njit.edu/~sdr3/DesignPatterns/
+
+
 What are design patterns?
 
 Design patterns have been understood as building blocks of code that can be
