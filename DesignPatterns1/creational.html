@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Design Patterns</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--My javascript which contains the DESIGN PATTERNS!!-->
+  <script src="creational.js"></script>
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <link rel="icon" 
+      type="favicon.ico" 
+      href="favicon.ico" />
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>Design<a href="#">Patterns</a></h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="creational.html">Creational Patterns</a></li>
+          <li><a href="structural.html">Structural Patterns</a></li>
+          <li><a href="behavioral.html">Behavioral Patterns</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/1.jpg" width="600" height="300" alt="photo_one" /></li>
+        <li><img src="images/2.jpg" width="600" height="300" alt="photo_two" /></li>
+        <li><img src="images/3.jpg" width="600" height="300" alt="photo_three" /></li>
+        <li><img src="images/4.jpg" width="600" height="300" alt="photo_four" /></li>
+        <li><img src="images/5.jpg" width="600" height="300" alt="photo_five" /></li>
+        <li><img src="images/6.jpg" width="600" height="300" alt="photo_six" /></li>
+      </ul>
+      <div id="sidebar_container">
+        <div class="sidebar">
+            <ul>
+          	<li><b>Link to GitHub Repository:</b></li>
+          	<li><a href="https://github.com/kinghenry8/IS217">IS217 Design Patterns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Creational Design Patterns</h1>
+        <h3>The use of Creational patterns enable the programmer to:</h3>
+        <ul>
+        	<li>Deal with object creation in an organized and efficient manner</li>
+        	<li>Reduce complexity and code when dealing with object creation/manipulation</li>
+        </ul>
+        <br>
+        <p><a href="creational.js">Factory/Decorator Design Pattern Example</a></p>
+        <br>
+        <p><b>Why I used the Factory with the Decorator pattern:</b></p>
+        <p>In this example, the factory method is used to create a car object,
+        	which in this case is a Tesla Model S. The decorator is used efficiently
+        	to add features to the car which then add to the overall cost which is
+        	an initial attritbute of the Model S car. One would assume that many internet customization
+        	modules for expensive items such as cars like these would utilize decorator
+        	patterns as methods for which to add features and increment cost accordingly.</p>
+    </div>
+    </div>
+    <footer>
+      <p><a href="index.html">home</a>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>

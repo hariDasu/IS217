@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Design Patterns</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--Implemented JavaScript from Addy Osmani to use the subject and the observer list-->
+  	<script src='observer.js'> </script>
+	<script src='subject.js'> </script>
+	<!--My Script to demonstrate the use of the constructor to create users to utilize observer/subject patterns -->
+	<script src='people.js'> </script>
+	<script src='chatters.js'></script>
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <link rel="icon" 
+      type="favicon.ico" 
+      href="favicon.ico" />
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>Design<a href="#">Patterns</a></h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="creational.html">Creational Patterns</a></li>
+          <li><a href="structural.html">Structural Patterns</a></li>
+          <li class="current"><a href="behavioral.html">Behavioral Patterns</a></li>
+        </ul>
+      </nav>
+      <link rel="icon" 
+      type="favicon.ico" 
+      href="favicon.ico" />
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/1.jpg" width="600" height="300" alt="photo_one" /></li>
+        <li><img src="images/2.jpg" width="600" height="300" alt="photo_two" /></li>
+        <li><img src="images/3.jpg" width="600" height="300" alt="photo_three" /></li>
+        <li><img src="images/4.jpg" width="600" height="300" alt="photo_four" /></li>
+        <li><img src="images/5.jpg" width="600" height="300" alt="photo_five" /></li>
+        <li><img src="images/6.jpg" width="600" height="300" alt="photo_six" /></li>
+      </ul>
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <ul>
+          	<li><b>Link to GitHub Repository:</b></li>
+          	<li><a href="https://github.com/kinghenry8/IS217">IS217 Design Patterns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Behavioral Design Patterns</h1>
+        <h3>Behavioral patterns allow the programmer to:</h3>
+        <ul>
+        	<li>Correctly represent the flow of information between components within a system</li>
+        </ul>
+        <br>
+        <p><a href="observer.js">Osmani Observer Example</a></p>
+        <p><a href="subject.js">Osmani Subject Example</a></p>
+        <p><a href="people.js">People Creation Script dreived from Osmani Observer/Subject Code</a></p>
+        <p><a href="chatters.js">Chatterbox creation script using people script methods</a></p>
+        <br>
+        <p><b>Why I used the Creation with the Observer Pattern:</b></p>
+        <p>Osmani's observer pattern as displayed on his site demonstrates
+        	how the observer pattern maintains a list and notifies it of any
+        	changes to its state. In the case where I created a people script and
+        	a chatterbox script, the subjects norify observers about something interesting happening,
+        	in this case, just a simple, "Hello World", "Bye World" message.</p>
+      </div>
+    </div>
+    <footer>
+      <p><a href="index.html">home</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>
